@@ -57,14 +57,3 @@ No downloads. No installs. Just pure retro-modern fun.
 </p>
 
 ---
-
-## 🧠 How to Run Locally
-
-```bash
-# Clone this repository
-git clone https://github.com/greninja04x/Neon-Snake-Game.git
-
-# Go inside the folder
-cd Neon-Snake-Game
-
-# Then open index.html in your browser
