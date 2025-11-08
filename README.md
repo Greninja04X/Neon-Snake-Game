@@ -53,7 +53,7 @@ No downloads. No installs. Just pure retro-modern fun.
 ## 🖼️ Screenshots
 
 <p align="center">
-  <img src="https://i.imgur.com/G5OSx6Q.png" width="70%" alt="Neon Snake Screenshot"/>
+  <img src="https://github.com/Greninja04X/Neon-Snake-Game/blob/main/snake%20game.png?raw=true"/>
 </p>
 
 ---
