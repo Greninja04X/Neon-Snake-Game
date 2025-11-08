@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neon Snake — Glow Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="panel">
+      <header>
+        <h1><span class="dot"></span> Neon Snake</h1>
+        <div class="controls">
+          <button id="themeToggle" class="toggle" aria-label="Toggle light/dark">🌙 Dark</button>
+          <label class="accent-swatch" title="Accent">
+            <span class="sw" data-color="#00e5ff" style="background:radial-gradient(circle at 30% 30%, #fff, #00e5ff)"></span>
+            <span class="sw" data-color="#9b5cff" style="background:radial-gradient(circle at 30% 30%, #fff, #9b5cff)"></span>
+            <span class="sw" data-color="#ff6ec7" style="background:radial-gradient(circle at 30% 30%, #fff, #ff6ec7)"></span>
+            <span class="sw" data-color="#9bff6e" style="background:radial-gradient(circle at 30% 30%, #fff, #9bff6e)"></span>
+          </label>
+          <select id="difficulty" title="Speed">
+            <option value="8">Chill</option>
+            <option value="10" selected>Classic</option>
+            <option value="14">Fast</option>
+            <option value="18">Insane</option>
+          </select>
+          <button id="btnStart">Start</button>
+          <button id="btnPause">Pause</button>
+          <button id="btnReset">Reset</button>
+          <button id="btnWalls" class="toggle" title="Walls on/off">Walls: Off</button>
+          <button id="btnSound" class="toggle" title="Sound on/off">🔊 Sound</button>
+        </div>
+      </header>
+
+      <div class="board-wrap">
+        <div class="hud">
+          <div class="score"><small>Score</small> <span id="score">0</span></div>
+          <div class="score"><small>High</small> <span id="high">0</span></div>
+          <div class="score lives"><small>Lives</small> <span id="lives">3</span> <span id="livesHearts" aria-hidden="true">❤❤❤</span></div>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="board" width="720" height="720" aria-label="Snake game board" role="img"></canvas>
+          <div class="overlay" id="overlay">
+            <div class="badge">
+              <div class="title">Press <span class="kbd">Enter</span> or tap <b>Start</b></div>
+              <div class="sub">Move: <span class="kbd">W A S D</span> / Arrows • Pause: <span class="kbd">P</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scoreboard -->
+        <details class="scores" id="scoresBox">
+          <summary>🏆 Scoreboard</summary>
+          <div class="scores-list" id="scoreList" role="list"></div>
+          <div class="scores-actions">
+            <button id="btnClearScores" title="Delete saved scores">Clear Scores</button>
+          </div>
+        </details>
+
+        <!-- Mobile controls -->
+        <div class="mobile-controls" aria-label="Mobile touch controls">
+          <div class="dpad">
+            <span></span>
+            <button data-d="up">▲</button>
+            <span></span>
+            <button data-d="left">◀</button>
+            <span></span>
+            <button data-d="right">▶</button>
+            <span></span>
+            <button data-d="down">▼</button>
+            <span></span>
+          </div>
+          <div class="action-row">
+            <button id="startMobile">Start</button>
+            <button id="pauseMobile">Pause</button>
+            <button id="resetMobile">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        Neon glow, smooth controls, local high‑score & scoreboard, multiple lives.
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
