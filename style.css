@@ -162,3 +162,14 @@ a{ color:var(--accent-2); text-decoration:none }
   .dpad{ grid-template-columns: repeat(3, 56px); grid-template-rows: repeat(3, 56px); }
   .dpad button{ width:56px; height:56px; border-radius:14px; }
 }
+footer p {
+  color: var(--muted);
+  text-align: center;
+  padding: 8px;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+footer .glow {
+  color: var(--accent);
+  text-shadow: 0 0 8px var(--accent), 0 0 20px var(--accent);
+}
